@@ -85,7 +85,7 @@ class NewsViewScreen extends StatelessWidget {
                       .launchURL(url);
                 },
                 child: const Text(
-                  "Click heare to Read more",
+                  "Click here to read more",
                   style: TextStyle(
                       fontSize: 15,
                       fontStyle: FontStyle.italic,

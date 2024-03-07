@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 
 import '../../controller/search_screen_controller.dart';
@@ -49,7 +48,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   ),
                 ),
                 const SizedBox(
-                 width: 20,
+                 width: 10,
                 ),
                 Expanded(
                   child: SizedBox(height: 40,
@@ -59,9 +58,11 @@ class _SearchScreenState extends State<SearchScreen> {
                             searchText: textController.text.toLowerCase());
                         FocusManager.instance.primaryFocus?.unfocus();
                       },
-                      child: Text(
-                        "Search",
-                        style: TextStyle(color: Colors.white),
+                      child: Center(
+                        child: Text(
+                          "Search",
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                       style: ButtonStyle(
                           backgroundColor:

@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
           titleTextStyle: TextStyle(
               color: Colors.white, fontSize: 20, fontWeight: FontWeight.w600),
           actions: [
-            IconButton(
+            IconButton(color: Colors.white,
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => SearchScreen()));

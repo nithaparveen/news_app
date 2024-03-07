@@ -23,8 +23,8 @@ class MainPage extends StatelessWidget {
           currentIndex: Provider.of<BottomNavController>(context).selectedindex,
             onTap: Provider.of<BottomNavController>(context,listen: false).onItemTap,
             elevation: 0,
-            items: [BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Home'),
-              BottomNavigationBarItem(icon: Icon(Icons.category),label: 'Category'),
+            items: [BottomNavigationBarItem(icon: Icon(Icons.home_outlined),label: 'Home'),
+              BottomNavigationBarItem(icon: Icon(Icons.category_outlined),label: 'Category'),
               BottomNavigationBarItem(icon: Icon(Icons.search),label: 'Search'),]
           ),
         ),
