@@ -12,7 +12,7 @@ class SearchScreenController with ChangeNotifier {
     notifyListeners();
 
     final url = Uri.parse(
-        "https://newsapi.org/v2/everything?q=&sortBy=popularity&apiKey=d710607b0b3d4c69ac3ea7762247ec90");
+        "https://newsapi.org/v2/everything?q=$searchText&sortBy=popularity&apiKey=d710607b0b3d4c69ac3ea7762247ec90");
     try {
       final response = await http.get(
         url,
