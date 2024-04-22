@@ -27,11 +27,9 @@ class SearchScreenController with ChangeNotifier {
         newsModel = NewsModel.fromJson(decodedData);
       } else {
         print("Api failed");
-        // Handle the failure case as needed.
       }
     } catch (e) {
       print("Error: $e");
-      // Handle the error case as needed.
     } finally {
       isLoading = false;
       notifyListeners();

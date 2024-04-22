@@ -66,12 +66,6 @@ class _CategoryScreenState extends State<CategoryScreen> {
         body: provider.isLoading == true
             ? Center(
              child: CircularProgressIndicator()
-            // LottieBuilder.asset(
-            //   "assets/animations/Animation - 1702395258490 (2).json",
-            //   fit: BoxFit.cover,
-            //   height: 150,
-            //   width: 150,
-            // )
           )
             : Padding(
           padding: const EdgeInsets.all(10),

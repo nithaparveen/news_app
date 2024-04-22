@@ -48,7 +48,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     ),
                   ),
                    SizedBox(
-                   width: 8,
+                   width: 8
                   ),
                   Expanded(
                     child: SizedBox(height: 40,width: 60,
