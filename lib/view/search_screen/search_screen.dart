@@ -47,7 +47,7 @@ class _SearchScreenState extends State<SearchScreen> {
                       ),
                     ),
                   ),
-                   SizedBox(
+                   const SizedBox(
                    width: 8
                   ),
                   Expanded(
@@ -64,7 +64,7 @@ class _SearchScreenState extends State<SearchScreen> {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
-                        style: ButtonStyle(
+                        style: const ButtonStyle(
                             backgroundColor:
                                 MaterialStatePropertyAll(Color(0xff8c2f35),)),
                       ),
@@ -75,14 +75,8 @@ class _SearchScreenState extends State<SearchScreen> {
               Expanded(
                 child: Provider.of<SearchScreenController>(context).isLoading ==
                         true
-                    ? Center(
+                    ? const Center(
                         child: CircularProgressIndicator()
-                      //   LottieBuilder.asset(
-                      //   "assets/animations/Animation - 1702395258490 (2).json",
-                      //   fit: BoxFit.cover,
-                      //   height: 150,
-                      //   width: 150,
-                      // )
                 )
                     : ListView.separated(
                         itemBuilder: (context, index) => NewsCard(
