@@ -25,23 +25,23 @@ class _HomeScreenState extends State<HomeScreen> {
     HomeScreenController provider = Provider.of<HomeScreenController>(context);
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xff8c2f35),
+          backgroundColor: const Color(0xff8c2f35),
           elevation: 0,
           centerTitle: true,
-          title: Text('News24'),
-          titleTextStyle: TextStyle(
+          title: const Text('News24'),
+          titleTextStyle: const TextStyle(
               color: Colors.white, fontSize: 20, fontWeight: FontWeight.w600),
           actions: [
             IconButton(color: Colors.white,
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => SearchScreen()));
+                      MaterialPageRoute(builder: (context) => const SearchScreen()));
                 },
-                icon: Icon(Icons.search))
+                icon: const Icon(Icons.search))
           ],
         ),
         body: Provider.of<HomeScreenController>(context).isLoading == true
-            ? Center(
+            ? const Center(
                 child: CircularProgressIndicator(),
               )
             : Padding(
