@@ -7,13 +7,14 @@ import '../../controller/home_screen_controller.dart';
 class NewsViewScreen extends StatelessWidget {
   const NewsViewScreen(
       {super.key,
-        required this.title,
-        required this.description,
-        this.date,
-        required this.imageUrl,
-        required this.contant,
-        required this.sourceName,
-        required this.url});
+      required this.title,
+      required this.description,
+      this.date,
+      required this.imageUrl,
+      required this.contant,
+      required this.sourceName,
+      required this.url});
+
   final String title;
   final String description;
   final DateTime? date;
@@ -39,11 +40,9 @@ class NewsViewScreen extends StatelessWidget {
               Text(
                 title,
                 style:
-                const TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
+                    const TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -51,9 +50,7 @@ class NewsViewScreen extends StatelessWidget {
                       "$sourceName | ${DateFormat('dd/MM/yyyy').format(date!).toString()}")
                 ],
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
               Container(
                 height: MediaQuery.sizeOf(context).height * 40 / 100,
                 decoration: BoxDecoration(
@@ -64,21 +61,17 @@ class NewsViewScreen extends StatelessWidget {
               Text(
                 "$description",
                 style:
-                const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
               SingleChildScrollView(
                 child: Text(
                   "$contant",
-                  style:
-                  const TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
+                  style: const TextStyle(
+                      fontSize: 15, fontWeight: FontWeight.w500),
                 ),
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
               InkWell(
                 onTap: () {
                   Provider.of<HomeScreenController>(context, listen: false)
