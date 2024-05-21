@@ -13,17 +13,17 @@ class MainPage extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Container(
-          padding: EdgeInsets.all(5),
+          padding: const EdgeInsets.all(5),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            color: Color(0xff8c2f35),
+            color: const Color(0xff8c2f35),
           ),
           child: BottomNavigationBar(selectedItemColor: Colors.white,
-          backgroundColor:Color(0xff8c2f35) ,
+          backgroundColor:const Color(0xff8c2f35) ,
           currentIndex: Provider.of<BottomNavController>(context).selectedindex,
             onTap: Provider.of<BottomNavController>(context,listen: false).onItemTap,
             elevation: 0,
-            items: [BottomNavigationBarItem(icon: Icon(Icons.home_outlined),label: 'Home'),
+            items: const [BottomNavigationBarItem(icon: Icon(Icons.home_outlined),label: 'Home'),
               BottomNavigationBarItem(icon: Icon(Icons.category_outlined),label: 'Category'),
               BottomNavigationBarItem(icon: Icon(Icons.search),label: 'Search'),]
           ),
